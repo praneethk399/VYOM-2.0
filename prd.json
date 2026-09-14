@@ -1,0 +1,63 @@
+{
+  "project": "VYOM Digital Twin AI Enhancements",
+  "branchName": "ralph/digital-twin-ai-enhancements",
+  "description": "Enhance the VYOM 3D Aero Propulsion Digital Twin with an advanced AI layer including live telemetry analysis, 3D model stat overlays, predictive maintenance alerts, and a natural language chat interface.",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "Live Telemetry AI Analysis Dashboard",
+      "description": "As an operator, I want an AI dashboard to analyze telemetry streams so that I can immediately identify subtle performance degradations.",
+      "acceptanceCriteria": [
+        "Add an AI Analysis panel to the dashboard UI",
+        "Integrate a mock or real LLM/AI service to generate insights based on current FadecTelemetryStep data",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 1,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "Real-time Stats on 3D Model Interaction",
+      "description": "As a technician, I want to click on 3D engine components and see their real-time telemetry stats overlaid directly so that I can visually correlate physical parts with data.",
+      "acceptanceCriteria": [
+        "Raycasting on 3D components displays floating tooltip with component-specific telemetry",
+        "Stats update in real-time as the simulation runs",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "Improved Predictive Maintenance Alerts",
+      "description": "As a maintenance planner, I want alerts to include predicted time-to-failure and recommended actions so that I can schedule maintenance proactively.",
+      "acceptanceCriteria": [
+        "Enhance the existing alert system to display AI-generated maintenance recommendations",
+        "Compute mock Prognostics/RUL (Remaining Useful Life) dynamically based on current fault injections",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 3,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "Natural Language Chat Interface",
+      "description": "As a system administrator, I want to query the engine status using natural language so that I can quickly extract specific telemetry without navigating complex menus.",
+      "acceptanceCriteria": [
+        "Add a chat UI component (e.g., floating chat widget or dedicated tab)",
+        "Connect chat input to a Gemini AI service to answer questions based on the current engine state context",
+        "Typecheck passes",
+        "Verify in browser using dev-browser skill"
+      ],
+      "priority": 4,
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}

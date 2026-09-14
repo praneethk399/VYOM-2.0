@@ -1,0 +1,6 @@
+{
+  "name": "VYOM - 3D Aero Propulsion Digital Twin",
+  "description": "Interactive 3D Digital Twin and live telemetry predictive maintenance dashboard for the VYOM supercharged aero-piston propulsion system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

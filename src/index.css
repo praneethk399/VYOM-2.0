@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #05070a;
+    background-image: radial-gradient(circle at 50% 50%, #0a0e1a 0%, #05070a 100%);
+    color: #e0e6ed;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading, button, input, select, textarea {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  }
+
+  * {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  .font-mono, code, pre, kbd, samp {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  }
+
+  .font-heading {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+    font-weight: 700;
+  }
+}
+
+/* Custom engineering scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #05070a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1f2e;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Technical grid background from Immersive UI theme */
+.tech-grid {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(79, 79, 79, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(79, 79, 79, 0.15) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg at 50% 50%, rgba(0, 240, 255, 0) 0deg, rgba(0, 240, 255, 0.15) 360deg);
+}
+
+/* Corner HUD accents matching Immersive UI cyan */
+.hud-corner-tl {
+  position: relative;
+}
+.hud-corner-tl::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #00f0ff;
+  border-left: 2px solid #00f0ff;
+  pointer-events: none;
+}
+.hud-corner-br {
+  position: relative;
+}
+.hud-corner-br::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #00f0ff;
+  border-right: 2px solid #00f0ff;
+  pointer-events: none;
+}
+
